@@ -1,0 +1,74 @@
+.editor-section {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.editor-left {
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.editor-left-inner {
+  flex: 1;
+}
+.connectedUsers {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.editor-left h4 {
+  color: #4aed88;
+}
+.copyId {
+  width: 100%;
+
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  background-color: #4aed88;
+  border-radius: 7px;
+}
+.editor-left-btn {
+  display: flex;
+  flex-direction: column;
+}
+.copyId:hover {
+  background: #1c7e41;
+}
+.leaveRoom {
+  margin-top: 5px;
+  color: rgb(240, 229, 229);
+  background: rgb(255, 17, 0);
+  width: 100%;
+  outline: none;
+  padding: 3px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.leaveRoom:hover {
+  background: #af1212;
+}
+@media only screen and (max-width: 600px) {
+  .editor-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .editor-left-btn {
+    display: flex;
+    flex-direction: row;
+  }
+  .leaveRoom {
+    margin-top: 0px;
+    color: rgb(240, 229, 229);
+    background: rgb(255, 17, 0);
+    width: 100%;
+    outline: none;
+    padding: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+}

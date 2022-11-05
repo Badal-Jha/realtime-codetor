@@ -1,0 +1,110 @@
+.home-section {
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+.home-container-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.home-container-left > img {
+  width: 550px;
+  height: 500px;
+}
+.home-container-right {
+  margin: auto;
+}
+/* .logo {
+  margin-left: 20px;
+  color: white;
+}
+.logo-part {
+  color: #4aed88;
+} */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-label {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.input-box {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-btn,
+.leave-btn {
+  background: #4aed88;
+  width: 100px;
+  margin-left: auto;
+}
+
+.join-btn:hover,
+.leave-btn:hover {
+  background: #2b824c;
+}
+
+.create-room {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createRoom-btn {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+.join-label {
+  font-size: large;
+  color: white;
+  font-weight: 800;
+}
+.create-room {
+  color: white;
+}
+.navbar img {
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footer a {
+  color: #4aed88;
+}
+@media only screen and (max-width: 600px) {
+  .home-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .home-container-right {
+    margin-top: 30px;
+  }
+  .home-container-left > img {
+    width: 400px;
+  }
+}

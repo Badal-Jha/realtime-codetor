@@ -1,0 +1,10 @@
+.username {
+  color: rgb(234, 236, 231);
+}
+.user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: small;
+}
