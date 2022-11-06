@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 //provide port
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 const io = new Server(server);
 //get connected clients
 function getConnectedClients(roomId) {
@@ -74,6 +74,6 @@ io.on("connection", (socket) => {
 // The server is listening to two events Code Change and Code Sync
 // Code Change is emitted when the user changes the code
 // Code Sync is called when the user joins the room to sync the previously typed code
-server.listen(port, () => {
+server.listen(PORT, () => {
   console.log("server connected");
 });
